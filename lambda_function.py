@@ -67,7 +67,7 @@ def lambda_handler(event, context):
         'level2_ownership': level2_ownership,
         'url': 'onepurchase-test-s3-quarantinebucket/'+prefix
             })
-            print("Uploaded to Quarantine Bucket due to missing metadata values")
+            print("Uploaded to Backup Bucket due to missing metadata values")
            
        else:
            
@@ -107,7 +107,7 @@ def lambda_handler(event, context):
         'url': 'onepurchase-test-s3-datalakebucket/'+prefix
             })
             
-            print("uploaded to datalake")
+            print("uploaded to target bucket")
 
             
     return 'Operation is successfully Completed'
